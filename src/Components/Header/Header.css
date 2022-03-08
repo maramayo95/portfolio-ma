@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+.Header{
+    display: flex;
+    height: 90vh;
+    background-color: #2C373D;
+    
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+.react {
+    color: #037F8C ;
+}
+.imgPortfolio {
+    display: flex;
+    justify-content: center;
+   height: 100%;
+    width: 100%;
+    background: rgb(23,29,32);
+    background: linear-gradient(90deg, rgba(23, 29, 32,1) 40%, rgba(44,55,61,1) 100%);
+  
+}
+
+.infoHeader  {
+    width: 50%;
+    padding: 100px;
+    color: #fafafa;
+    
+    
+}
+
+.infoHeader h1 {
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    font-family: Raleway;
+    font-weight: 500;
+}
+.infoHeader h2 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-family: Raleway;
+    font-weight: 300;
+}
+.infoHeader h3 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: Raleway;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@media (max-width:912px){
+    
+    .Header {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30%;
+        
+    }
+
+   
+
+    .imgPortfolio .portfolioPh{
+       width: 100%;
+    }
+    
+    .infoHeader{
+        margin-left: 30px;
+        padding: 0px;
+        width: 70%;
+
+    }
+    .infoHeader h1{
+        font-size: 4rem;
+        
+    }
+    .infoHeader h2{
+        font-size: 3rem;
+    }
+    
+    .infoHeader h3{
+        font-size: 2rem;
+    }
+
+    .imgPortfolio {
+        background: rgb(23,29,32);
+         background: linear-gradient(0deg, rgba(23,29,32,1) 0%, rgba(44,55,61,1) 100%);
+    }
+   
+}
+
+@media(max-height:600px) {
+    .infoHeader h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .infoHeader h1{
+        font-size: 2.5rem;
+        
+    }
+    .infoHeader h2{
+        font-size: 2rem;
+    }
+    
+    .infoHeader h3{
+        font-size: 1.5rem;
+    }
+   
+}

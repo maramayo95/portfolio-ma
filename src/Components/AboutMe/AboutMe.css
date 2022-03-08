@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+
+.about-container{
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: #037F8C ;
+ height: auto;
+ padding:100px;
+ font-size: 2.5rem;
+ letter-spacing: 3px;
+ color: #fafafa;
+ font-family: Raleway;
+}
+
+.about-container p {
+    font-weight: 100;
+}
+
+@media (max-width:800px) {
+    .about-container {
+        font-size: 35px;
+        padding: 15px;
+        
+        
+    }
+}
+
+
+@media (max-width: 280px) {
+    .about-container p {
+        font-size: 28px;
+       
+    }
+}

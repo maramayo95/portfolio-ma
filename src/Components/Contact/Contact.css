@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+.contact-container{
+    background-color: #21282a;
+    padding-bottom: 40px;
+}
+
+ .contact-container .h3-contact {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    color: #fafafa;
+    font-family: Raleway;
+   
+}
+.form-contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-contact input {
+    width: 800px;  
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Raleway;
+    margin-top: 20px;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+
+}
+
+
+.form-contact .send {
+    background-color: transparent;
+    color: #fafafa;
+    background-color: #037F8C ;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    font-family: Raleway;
+    
+}
+
+.form-contact .send:hover{
+    background-color: #016672;
+}
+
+
+@media (max-width: 800px){
+    .form-contact input {
+        width: 80vw;
+        font-size: 25px;
+    }
+   .contact-container h3 {
+        font-size: 3rem;
+    }
+    .form-contact .send {
+        width: 80vw;
+        font-size:20px;
+    }
+
+
+
+}
+
+

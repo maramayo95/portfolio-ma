@@ -1,0 +1,72 @@
+.h3Skills {
+    color: #fafafa;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: Raleway;
+    font-weight: 500;
+}
+.section-skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.grid-skill-icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-skill-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 20px;
+    padding-bottom: 30px;
+}
+
+.skill-icon{
+    color: #fafafa;
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+.grid-skill-icons p {
+    color: white;
+    text-align:center;
+    font-family: Raleway;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.html:hover {
+    color: orange;
+}
+
+.css3:hover {
+    color: #264de4;
+}
+.js:hover {
+    color: yellow;
+}
+
+.react:hover {
+    color: #00d3eb;
+}
+
+.bs:hover {
+    color: violet;
+}
+
+.fireb:hover {
+    color: orangered;
+}
+
+@media (max-width:800px) {
+    .grid-skill-icons {
+        display:grid;
+        grid-template-columns: 1fr;
+    
+    }    
+    
+}
