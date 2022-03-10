@@ -34,7 +34,7 @@ li {
 .copyright-footer p {
     color: white;
     font-size:20px;
-    padding:15px;
+    padding:5px;
     font-family: Raleway;
     text-align: center;
 }
@@ -42,7 +42,7 @@ li {
 @media (max-width:280px) {
 
     .social-media li a {
-        font-size: 35px;
+        font-size: 20px;
         margin: 15px;
     }
 }

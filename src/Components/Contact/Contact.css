@@ -1,99 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap");
 
-.contact-container{
-    background-color: #21282a;
-    padding-bottom: 40px;
+.contact-container {
+  background-color: #21282a;
+  padding-bottom: 40px;
 }
 
- .contact-container .h3-contact {
-    font-size: 3rem;
-    text-align: center;
-    padding: 30px;
-    color: #fafafa;
-    font-family: Raleway;
-   
+.contact-container .h3-contact {
+  font-size: 3rem;
+  text-align: center;
+  padding: 30px;
+  color: #fafafa;
+  font-family: Raleway;
 }
-.form-contact{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-contact input {
-    width: 80vw;  
-    background-color: transparent;
-    font-size: 20px;
-    font-family: Raleway;
-    margin-top: 20px;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-top-style: hidden;
-
+.form-contact .input {
+  width: 80vw;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Raleway;
+  margin-top: 20px;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  color: #fafafa;
 }
 
-.form-contact input::placeholder {
-    color:#fafafa;
+.form-contact .input::placeholder {
+  color: #fafafa;
 }
 
 .form-contact textarea {
-    color: #fafafa;
-    min-width:80vw;
-    max-width: 80vw;
-    min-height: 20vh;
-    max-height: 20vh;    
-    background-color: transparent;
-    font-size: 20px;
-    font-family: Raleway;
-    margin-top: 20px;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-top-style: hidden;
-
+  color: #fafafa;
+  min-width: 80vw;
+  max-width: 80vw;
+  min-height: 20vh;
+  max-height: 20vh;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Raleway;
+  margin-top: 20px;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
 }
 .form-contact textarea::placeholder {
-    color:#fafafa;
-    
+  color: #fafafa;
 }
 
 .form-contact .send {
-    background-color: transparent;
-    color: #fafafa;
-    background-color: #037F8C ;
-    margin-top: 30px;
-    padding: 15px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: none;
-    font-family: Raleway;
-    
+  background-color: transparent;
+  color: #fafafa;
+  background-color: #037f8c;
+  margin-top: 30px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  font-family: Raleway;
 }
 
-.form-contact .send:hover{
-    background-color: #016672;
+.form-contact .send:hover {
+  background-color: #016672;
 }
 
-
-@media (max-width: 800px){
-    .form-contact input {
-        width: 80vw;
-        font-size: 25px;
-    }
-   .contact-container h3 {
-        font-size: 3rem;
-    }
-    .form-contact .send {
-        width: 80vw;
-        font-size:20px;
-    }
-
-    .form-contact text-area {
-        width: 80vw;
-        font-size: 25px;
-    }
-
-
+.errorDiv {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
 }
 
+.errors {
+  color: rgb(223, 71, 89);
+  font-family: Raleway;
+  font-size: 18px;
+}
 
+.succesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.succes {
+  font-family: Raleway;
+  font-size: 18px;
+  color: #4bb543;
+}
+
+@media (max-width: 800px) {
+  .form-contact .input {
+    width: 80vw;
+    font-size: 25px;
+  }
+  .contact-container h3 {
+    font-size: 3rem;
+  }
+  .form-contact .send {
+    width: 80vw;
+    font-size: 20px;
+  }
+
+  .form-contact text-area {
+    width: 80vw;
+    font-size: 25px;
+  }
+}

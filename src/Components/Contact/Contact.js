@@ -1,24 +1,144 @@
-import React from 'react'
-import './Contact.css'
+import React, { useState } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import "./Contact.css";
+
 const Contact = () => {
+
+  const [formSend, setformSend] = useState(false)
+
   return (
     <div className="contact-container">
-        <h3 className="h3-contact">Get in Touch</h3>
-        <form  className="form-contact">
-                <input type="text" name="name" placeholder='Write your Name'/>
+      <h3 className="h3-contact">Get in Touch</h3>
 
+      <Formik
+        initialValues={{
+          name: "",
+          phone: "",
+          textArea: "",
+          email: "",
+        }}
+        onSubmit={(values , {resetForm}) => {
+          //Llamada a api que conecta y envia valores
+          console.log("Formulario enviado");
+          resetForm();
+          setformSend(true)
+          setTimeout(()=> {
+            setformSend(false)
+          }, 5000)
+        }}
+        validate={(values) => {
+          let errObj = {};
 
-                <input type="text" name="phone" placeholder='Write your Phone'/>
+          if (!values.name) {
+            errObj.name = "Please enter a name ";
+          } else if (!/^[A-Z]+$/i.test(values.name)) {
+            errObj.name = "The name can't be numbers";
+          }
 
+          if (!values.phone) {
+            errObj.phone = "Please enter your phone number";
+          } else if (!/^[0-9]{10,10}$/.test(values.phone)) {
+            errObj.phone = "The phone must contain 10 numbers";
+          }
 
-                <input type="email" name="email" placeholder='Write your email'/>
+          if (!values.email) {
+            errObj.email = "Please enter your email";
+          } else if (
+            !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+              values.email
+            )
+          ) {
+            errObj.email = "The email must contain letters, numbers, . and _";
+          }
 
-                <textarea type="text" name="text-area" placeholder='Tell me more'/>            
+          if(!values.textArea) {
+            errObj.textArea = "Please leave a message"
+          }
 
-            <button className="send">Send</button>
-        </form>
+          return errObj;
+        }}
+      >
+        {({errors}) => (
+          <Form className="form-contact" >
+            <Field
+              className="input"
+              type="text"
+              name="name"
+              placeholder="Write your Name"
+            />
+            
+            <ErrorMessage name="name" component={
+              ()=>
+              ( 
+              <div className="errorDiv">
+                <p className="errors">{errors.name}</p>
+              </div>
+              )
+            }/>
+          
+
+            <Field
+              className="input"
+              type="text"
+              name="phone"
+              placeholder="Write your Phone"
+            />
+            
+            <ErrorMessage name="phone" component={
+              ()=>
+              ( 
+              <div className="errorDiv">
+                <p className="errors">{errors.phone}</p>
+              </div>
+              )
+            }/>
+
+            <Field
+              className="input"
+              type="email"
+              name="email"
+              placeholder="Write your email"
+            />
+
+            <ErrorMessage name="email" component={
+              ()=>
+              ( 
+              <div className="errorDiv">
+                <p className="errors">{errors.email}</p>
+              </div>
+              )
+            }/>
+
+            <Field as="textarea" 
+              type="text"
+              name="textArea"
+              placeholder="Tell me more"
+            />
+
+            <ErrorMessage name="textArea" component={
+              ()=>
+              ( 
+              <div className="errorDiv">
+                <p className="errors">{errors.textArea}</p>
+              </div>
+              )
+            }/>
+
+            <button className="send" type="submit">
+              Send
+            </button>
+          </Form>
+        )}
+      </Formik>
+    
+    {formSend && <div className="succesDiv">
+      <p className="succes">Formulario enviado con éxtio</p>
+      </div>}
+      
+
     </div>
-  )
-}
+    
+  );
+};
 
-export default Contact
+export default Contact;
