@@ -7,15 +7,13 @@ const Contact = () => {
         <form  className="form-contact">
                 <input type="text" name="name" placeholder='Write your Name'/>
 
-                <input type="text" name="subName" placeholder='Write your Name'/>
 
                 <input type="text" name="phone" placeholder='Write your Phone'/>
 
-                <input type="text" name="confirmPhone" placeholder='Confirm your phone'/>
 
                 <input type="email" name="email" placeholder='Write your email'/>
-            
-                <input type="email" name="email" placeholder='Confirm your email'/>
+
+                <textarea type="text" name="text-area" placeholder='Tell me more'/>            
 
             <button className="send">Send</button>
         </form>

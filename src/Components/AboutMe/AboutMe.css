@@ -23,9 +23,12 @@
     .about-container {
         font-size: 35px;
         padding: 15px;
-        
-        
     }
+
+    .about-container h3 {
+        margin:30px;
+    }
+
 }
 
 

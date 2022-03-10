@@ -22,7 +22,7 @@
 }
 
 .form-contact input {
-    width: 800px;  
+    width: 80vw;  
     background-color: transparent;
     font-size: 20px;
     font-family: Raleway;
@@ -33,6 +33,29 @@
 
 }
 
+.form-contact input::placeholder {
+    color:#fafafa;
+}
+
+.form-contact textarea {
+    color: #fafafa;
+    min-width:80vw;
+    max-width: 80vw;
+    min-height: 20vh;
+    max-height: 20vh;    
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Raleway;
+    margin-top: 20px;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+
+}
+.form-contact textarea::placeholder {
+    color:#fafafa;
+    
+}
 
 .form-contact .send {
     background-color: transparent;
@@ -65,6 +88,10 @@
         font-size:20px;
     }
 
+    .form-contact text-area {
+        width: 80vw;
+        font-size: 25px;
+    }
 
 
 }
