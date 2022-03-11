@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Contact from './Components/Contact/Contact';
@@ -10,20 +11,13 @@ import Skills from './Components/Skills/Skills';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <Header/>
       <AboutMe/>
       <Skills/>
       <Projects/>
       <Contact/>
       <Footer/>
-{
-  /* 
-  
-
-  Se rompe en 820 x 1180
-  */
-}
     </div>
   );
 }

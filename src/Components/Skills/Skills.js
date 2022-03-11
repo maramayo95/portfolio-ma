@@ -5,55 +5,44 @@ import { SiFirebase } from "react-icons/si";
 
 const Skills = () => {
   return (
-      <>
-      <h3 className="h3Skills">Skills & Tools </h3>
-    <section className="section-skills">
-        
-      <div className="grid-skill-icons">
-        <div className="grid-skill-icon">
-          <a>
-            <FaHtml5 className="skill-icon html" />
-            <p>Html</p>
-          </a>
-        </div>
+    <>
+      <section className="section-skills" id="skills">
+          <h3 className="h3Skills">Skills & Tools </h3>
+        <section className="section-skills">
+          <div className="grid-skill-icons">
+            <div className="grid-skill-icon">
+              <FaHtml5 className="skill-icon html" />
+              <p>Html</p>
+            </div>
 
-        <div className="grid-skill-icon">
-          <a>
-            <FaCss3Alt className="skill-icon  css3" />
-            <p>Css</p>
-          </a>
-        </div>
+            <div className="grid-skill-icon">
+              <FaCss3Alt className="skill-icon  css3" />
+              <p>Css</p>
+            </div>
 
-        <div className="grid-skill-icon">
-          <a>
-            <FaJs className="skill-icon js" />
-            <p>Javascript</p>
-          </a>
-        </div>
+            <div className="grid-skill-icon">
+              <FaJs className="skill-icon js" />
+              <p>Javascript</p>
+            </div>
 
-        <div className="grid-skill-icon">
-          <a>
-            <FaReact className="skill-icon react" />
-            <p>React</p>
-          </a>
-        </div>
+            <div className="grid-skill-icon">
+              <FaReact className="skill-icon react" />
+              <p>React</p>
+            </div>
 
-        <div className="grid-skill-icon ">
-          <a>
-            <FaBootstrap className="skill-icon bs" />
-            <p>Bootstrap</p>
-          </a>
-        </div>
+            <div className="grid-skill-icon ">
+              <FaBootstrap className="skill-icon bs" />
+              <p>Bootstrap</p>
+            </div>
 
-        <div className="grid-skill-icon ">
-          <a>
-            <SiFirebase className="skill-icon fireb" />
-            <p>Firebase</p>
-          </a>
-        </div>
-      </div>
-    </section>
-      </>
+            <div className="grid-skill-icon ">
+              <SiFirebase className="skill-icon fireb" />
+              <p>Firebase</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </>
   );
 };
 

@@ -19,6 +19,8 @@
     font-weight: 100;
 }
 
+
+
 @media (max-width:800px) {
     .about-container {
         font-size: 35px;
@@ -28,13 +30,14 @@
     .about-container h3 {
         margin:30px;
     }
-
+    .about-container p {
+        margin-bottom: 50px;
+    }
 }
 
 
 @media (max-width: 280px) {
     .about-container p {
         font-size: 28px;
-       
     }
 }

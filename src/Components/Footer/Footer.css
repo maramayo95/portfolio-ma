@@ -37,6 +37,7 @@ li {
     padding:5px;
     font-family: Raleway;
     text-align: center;
+    padding: 20px;
 }
 
 @media (max-width:280px) {

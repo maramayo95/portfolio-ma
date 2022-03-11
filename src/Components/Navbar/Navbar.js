@@ -1,6 +1,8 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
 import './Navbar.css'
 import { FaBars } from "react-icons/fa";
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
@@ -32,12 +34,12 @@ const Navbar = () => {
     <nav>
       {(toggleMenu || screenWidth > 500) && (
       <ul className="list">
-      <li className="items">Home</li>
-      <li className="items">About Me</li>
-      <li className="items">Skills</li>
-      <li className="items">Projects</li>
-      <li className="items">Contact</li>
-    </ul>
+      <Link className="items" to="home" smooth={true} duration={1000}>Home</Link>
+      <Link className="items" to="about-me" smooth={true} duration={1000}>About</Link>
+      <Link className="items" to="skills" smooth={true} duration={1000}>Skills</Link>
+      <Link className="items" to="projects" smooth={true} duration={1000}>Projects</Link>
+      <Link className="items" to="contact" smooth={true} duration={1000}>Contact</Link>
+      </ul>
       )}
       <div className="line-nav">
       </div>

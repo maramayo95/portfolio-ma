@@ -2,16 +2,19 @@ import React from 'react'
 import './AboutMe.css'
 const AboutMe = () => {
   return (
-    <div className="about-container">
-        <h3>About Me</h3>
-        <p>
-         I'm located in Buenos Aires, Argentina. I have a pasion for programing and creating intuitive, dynamic user experiences.
-        </p>
-        <br/>
-        <p>
-          I characterize myself as a responsible, organized person and pay close attention to details.
-        </p>
-    </div>
+    <section id="about-me">
+      <div className="about-container">
+          <h3>About Me</h3>
+          <br></br>
+          <p>
+          I´m based in Buenos Aires, Argentina. My passion is to create and programme intuite and dynamic user experiences.
+          </p>
+          <br></br>
+          <p>
+          I characterize myself as a responsible and organized person who pay close attention to details.
+          </p>
+      </div>
+    </section>
   )
 }
 
