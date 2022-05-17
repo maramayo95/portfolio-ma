@@ -3,8 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./Contact.css";
 
 const encode = data => {
-  return
-    Object.keys(data).map(key => encodeURIComponent(key)+"="+encodeURIComponent(data[key])).join("&")
+  return Object.keys(data).map(key => encodeURIComponent(key)+"="+encodeURIComponent(data[key])).join("&")
 }
 
 const Contact = () => {
