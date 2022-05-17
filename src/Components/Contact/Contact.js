@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./Contact.css";
 
+const encode = data => {
+  return
+    Object.keys(data).map(key => encodeURIComponent(key)+"="+encodeURIComponent(data[key])).join("&")
+}
 
 const Contact = () => {
   const [formSend, setformSend] = useState(false);
@@ -20,6 +24,15 @@ const Contact = () => {
           }}
           onSubmit={(values, { resetForm }) => {
             //Llamada a api que conecta y envia valores
+            fetch("/", {
+              method: "POST",
+              headers: {"Content-Type": "application/x-www-form-urlencoded" },
+              body: encode({
+                "form-name": "contact-form",
+                ...values
+                
+              })
+            })
             console.log("Formulario enviado");
             console.log(values)
             resetForm();
@@ -61,7 +74,9 @@ const Contact = () => {
           }}
         >
           {({ errors }) => (
-            <Form className="form-contact" name="contactForm" netlify>
+            <Form className="form-contact" name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field" >
+              <Field type="hidden" name="form-name"/>
+              <Field type="hidden" name="bot-field"/>
               <Field
                 className="input"
                 type="text"
@@ -126,7 +141,7 @@ const Contact = () => {
                 )}
               />
 
-              <button className="send" type="submit">
+              <button className="send"  type="submit">
                 Send
               </button>
             </Form>
