@@ -73,7 +73,7 @@ const Contact = () => {
           }}
         >
           {({ errors }) => (
-            <Form className="form-contact" name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field" >
+            <Form className="form-contact" name="contact-form">
               <Field type="hidden" name="form-name"/>
               <Field type="hidden" name="bot-field"/>
               <Field
