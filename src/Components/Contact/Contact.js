@@ -73,7 +73,7 @@ const Contact = () => {
           }}
         >
           {({ errors }) => (
-            <Form className="form-contact" name="contact-form">
+            <Form className="form-contact" name="contact-form" method="POST">
               <Field type="hidden" name="form-name"/>
               <Field type="hidden" name="bot-field"/>
               <Field
