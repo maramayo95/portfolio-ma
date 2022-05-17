@@ -1,7 +1,6 @@
 import React from 'react'
 import './Header.css'
 import portfPh from '../../Img/portfolio-img-final.jpg'
-import {FaReact} from 'react-icons/fa'
 const Header = () => {
   return (
     <section className="Header" id="home">

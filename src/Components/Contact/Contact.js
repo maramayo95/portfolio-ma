@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import "./Contact.css";
 
+
 const Contact = () => {
   const [formSend, setformSend] = useState(false);
-
+  
   return (
     <section id="contact">
       <div className="contact-container">
         <h3 className="h3-contact">Get in Touch</h3>
 
-        <Formik
+        <Formik 
           initialValues={{
             name: "",
             phone: "",
@@ -20,6 +21,7 @@ const Contact = () => {
           onSubmit={(values, { resetForm }) => {
             //Llamada a api que conecta y envia valores
             console.log("Formulario enviado");
+            console.log(values)
             resetForm();
             setformSend(true);
             setTimeout(() => {
@@ -59,7 +61,7 @@ const Contact = () => {
           }}
         >
           {({ errors }) => (
-            <Form className="form-contact">
+            <Form className="form-contact" name="contact-form" netlify>
               <Field
                 className="input"
                 type="text"
@@ -96,7 +98,7 @@ const Contact = () => {
                 className="input"
                 type="email"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
               />
 
               <ErrorMessage
