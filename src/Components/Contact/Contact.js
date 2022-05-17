@@ -61,7 +61,7 @@ const Contact = () => {
           }}
         >
           {({ errors }) => (
-            <Form className="form-contact" name="contact-form" netlify>
+            <Form className="form-contact" name="contactForm" netlify>
               <Field
                 className="input"
                 type="text"
