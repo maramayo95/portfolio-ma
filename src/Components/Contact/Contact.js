@@ -16,6 +16,8 @@ const Contact = () => {
 
         <Formik 
           initialValues={{
+            "bot-field": "",
+            "form-name": "contact",
             name: "",
             phone: "",
             textArea: "",
