@@ -37,7 +37,7 @@ const Navbar = () => {
       <Link className="items" to="home" smooth={true} duration={1000}>Home</Link>
       <Link className="items" to="about-me" smooth={true} duration={1000}>About</Link>
       <Link className="items" to="skills" smooth={true} duration={1000}>Skills</Link>
-      <Link className="items" to="projects" smooth={true} duration={1000}>Projects</Link>
+      {/* <Link className="items" to="projects" smooth={true} duration={1000}>Projects</Link> */}
       <Link className="items" to="contact" smooth={true} duration={1000}>Contact</Link>
       </ul>
       )}
