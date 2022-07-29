@@ -17,7 +17,7 @@
 .imgPortfolio {
     display: flex;
     justify-content: center;
-    height: 100%;
+    width: 50%;
     background: rgb(44,55,61);
     background: linear-gradient(103deg, rgba(44,55,61,1) 32%, rgba(23,29,32,1) 73%);
   
@@ -109,6 +109,7 @@
     .imgPortfolio {
         background: rgb(44,55,61);
         background: linear-gradient(180deg, rgba(44,55,61,1) 40%, rgba(29,37,41,1) 80%);
+        width: 100%;
     }
    
 }
