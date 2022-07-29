@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import portfPh from '../../Img/portfolio-img-final.jpg'
+import portfPh from '../../Img/portfolio-img-final-photoshop.png'
 const Header = () => {
   return (
     <section className="Header" id="home">
